@@ -15,8 +15,9 @@ counttours size = length (search size)
 search :: Size -> [[Square]]
 search size@(wid,len) = helper [[Square 1 1]] where
 	end = wid*len
-	helper pr	| length (head pr) == end = pr
-				| otherwise = helper $ concatMap next pr where
-		next xs = map (\x->x:xs) $ filter (`notElem` xs) (moves size (head xs))
+	helper pr
+		| length (head pr) == end = pr
+		| otherwise = helper $ concatMap next pr
+	next xs = map (\x->x:xs) $ filter (`notElem` xs) (moves size (head xs))
 
 run = product . map counttours $ [(4,5), (4,7), (5,5)]
