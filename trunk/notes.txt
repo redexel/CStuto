@@ -108,10 +108,11 @@ Format is min:sec:ms
 94. 00:00:225
 95. 00:50:027
 95. 00:05:723
+96. 00:00:047
 
 Slowest program: p53.hs
-Haskell programs: 86
+Haskell programs: 87
 C programs: 7
 Java programs: 2
 C++ programs: 1
-Input files: 18
+Input files: 19
