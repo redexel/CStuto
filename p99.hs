@@ -17,4 +17,3 @@ a n k
 		(sum $ zipWith (\e f -> a e f) [n-3,n-4..n-k-2] [k-1,k-2..0])
 
 run = a 100 90
-main = print run
