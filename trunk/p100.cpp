@@ -25,7 +25,6 @@ int main(){
 			continue;
 
 		std::next_permutation(s, s+len);
-		printf("%s\n", s);
 		sum += atoi(s);
 	}
 	printf("%d", sum);
