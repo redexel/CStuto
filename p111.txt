@@ -1,0 +1,8 @@
+Kind of a trick problem.
+
+The last digit is a check digit in such a way that no matter
+what the previous 9 digits are, there is exactly one possible
+valid check digit.
+
+And there are 1000000000 possible values for the first 9 digits
+so that's the answer.
